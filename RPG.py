@@ -44,21 +44,7 @@ class Player(pygame.sprite.Sprite):
                 self.rect.y = size[1] - self.width
             elif self.rect.y < 0:
                 self.rect.y = 0
-    '''        
-    def updateHori(self):
-        self.rect.x = self.rect.x + self.speed
-        if self.rect.x > size[0] - self.height:
-            self.rect.x = size[0] - self.height
-        elif self.rect.x < 0:
-            self.rect.x = 0
-    def updateVer(self):
-        self.rect.y = self.rect.y + self.speed
-        if self.rect.y > size[1] - self.width:
-            self.rect.y = size[1] - self.width
-        elif self.rect.y < 0:
-            self.rect.y = 0
-    '''
-    
+       
     def player_set_speed(self,speed):
         self.speed = speed
 
